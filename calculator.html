@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Calculator</title>
     <style>
@@ -12,9 +13,10 @@
             margin-top: 50px;
             border-radius: 20px;
             padding: 10px;
-            box-shadow: 0px 0px 10px 4px palevioletred ; 
-         }
-        .calci-screen{
+            box-shadow: 0px 0px 10px 4px palevioletred;
+        }
+
+        .calci-screen {
             font-size: 40px;
             width: 350px;
             display: block;
@@ -22,60 +24,82 @@
             margin-right: auto;
             margin-top: 15px;
             padding: 7px;
-            background-color:rgb(216, 213, 213);
+            background-color: rgb(216, 213, 213);
             border-radius: 10px;
             border-color: bisque;
-            margin-bottom: 20px;   }
-            .cal-button {
-                font-size: 30px;
-                height: 60px;
-                width: 60px;
-                border-radius: 10px;
-                border: 0cm;
-                cursor: pointer;
-                border: 1px solid palevioletred;
-            box-shadow: 2px 0px 7px 3px rgb(249, 230, 195); }
-            .button-row {
-                display: flex;
-                justify-content: space-evenly;
-                margin-top: 15px; }
-            .cal-button:hover{
-                font-size: 36px;
-                box-shadow: 0px 0px 5px 3px grey;   }
-              .bg-pink {
-                background-color: rgb(253, 153, 186);
-                color: white; }
-              .brand-name{
-                color: white;
-               text-align: right;
-               margin-right: 20px;
-               font-size: 18px;
-               margin-bottom: 10px;  }
-              .small-button{
-                display: flex;
-               justify-content: end;
-               margin-right: 20px;  
-               border-color: bisque;
-               border-radius: 5px; }
-              .small {
-               height: 17px;
-               width: 20px;}
-              .cal-buttonC {
-               font-size: 35px;
-                color: rgb(179, 114, 240);
-                height: 60px;
-                width: 150px;
-                border-radius: 10px;
-                border: 0cm;
-                cursor: pointer;
-                border: 1px solid rgb(239, 81, 254);
-                background-color: rgb(113, 255, 182);
-                }
-               .cal-buttonC:hover{
-                font-size: 40px;
-                box-shadow: 0px 0px 5px 3px grey;   }
+            margin-bottom: 20px;
+        }
+        .calci-screen:focus{
+            outline: none;
+        }
+
+        .cal-button {
+            font-size: 30px;
+            height: 60px;
+            width: 60px;
+            border-radius: 10px;
+            border: 0cm;
+            cursor: pointer;
+            border: 1px solid palevioletred;
+            box-shadow: 2px 0px 7px 3px rgb(249, 230, 195);
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+
+        .cal-button:hover {
+            font-size: 36px;
+            box-shadow: 0px 0px 5px 3px grey;
+        }
+
+        .bg-pink {
+            background-color: rgb(253, 153, 186);
+            color: white;
+        }
+
+        .brand-name {
+            color: black;
+            text-align: right;
+            margin-right: 20px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .small-button {
+            display: flex;
+            justify-content: end;
+            margin-right: 20px;
+            border-color: bisque;
+            border-radius: 5px;
+        }
+
+        .small {
+            height: 17px;
+            width: 20px;
+        }
+
+        .cal-buttonC {
+            font-size: 35px;
+            color: rgb(179, 114, 240);
+            height: 60px;
+            width: 150px;
+            border-radius: 10px;
+            border: 0cm;
+            cursor: pointer;
+            border: 1px solid rgb(239, 81, 254);
+            background-color: rgb(113, 255, 182);
+        }
+
+        .cal-buttonC:hover {
+            font-size: 40px;
+            box-shadow: 0px 0px 5px 3px grey;
+        }
     </style>
 </head>
+
 <body>
     <div class="calculator-container">
         <p class="brand-name">CalsioF2X05</p>
@@ -89,25 +113,32 @@
             <button class="cal-buttonC">AC</button>
             <button class="cal-button">Del</button>
             <button class="cal-button  bg-pink">/</button>
-       </div>
-    <div class="button-row">
-        <button class="cal-button">1</button>
-        <button class="cal-button">2</button>
-        <button class="cal-button">3</button>
-        <button class="cal-button bg-pink ">+</button> </div>
+        </div>
+        <div class="button-row">
+            <button class="cal-button">1</button>
+            <button class="cal-button">2</button>
+            <button class="cal-button">3</button>
+            <button class="cal-button bg-pink ">+</button>
+        </div>
         <div class="button-row">
             <button class="cal-button">4</button>
             <button class="cal-button">5</button>
             <button class="cal-button">6</button>
-            <button class="cal-button bg-pink ">-</button> </div> <div class="button-row">
-                <button class="cal-button">7</button>
-                <button class="cal-button">8</button>
-                <button class="cal-button">9</button>
-                <button class="cal-button bg-pink ">x</button> </div> <div class="button-row">
-                    <button class="cal-button bg-pink ">0</button>
-                    <button class="cal-button bg-pink ">00</button>
-                    <button class="cal-button bg-pink ">.</button>
-                    <button class="cal-button bg-pink ">=</button> </div>
+            <button class="cal-button bg-pink ">-</button>
+        </div>
+        <div class="button-row">
+            <button class="cal-button">7</button>
+            <button class="cal-button">8</button>
+            <button class="cal-button">9</button>
+            <button class="cal-button bg-pink ">x</button>
+        </div>
+        <div class="button-row">
+            <button class="cal-button bg-pink ">0</button>
+            <button class="cal-button bg-pink ">00</button>
+            <button class="cal-button bg-pink ">.</button>
+            <button class="cal-button bg-pink ">=</button>
+        </div>
     </div>
 </body>
+
 </html>
